@@ -31,14 +31,14 @@ import {
   ADD_SMURF_S,
 } from '../actions';
 
-const initalState = {
+const initialState = {
   smurfs: [],
   fetchingSmurfs: false,
   addingSmurf: false,
   error: null
 };
 
-const smurfReducer = (state = initalState, action) => {
+const smurfReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_SMURFS:
       return {
